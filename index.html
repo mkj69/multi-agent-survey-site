@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg?v=1">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=1">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=1">
+<title>Multi-Agent Reader</title>
+<meta name="description" content="A reading list on multi-agent AI systems and agent swarms: papers, posts, code and discussions, with an embedded reader and comments.">
+<link rel="stylesheet" href="assets/style.css?v=8">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="./"><img src="assets/icon.svg?v=1" alt="" width="20" height="20">Multi-Agent Reader</a>
+  <nav class="nav"><a href="./" class="on">Library</a><a href="map.html">Map</a><a href="https://mkj69.github.io/swarm-survey-site/report.html" target="_blank" rel="noopener" title="Survey report in Chinese, with fact checks">Report (中文)</a></nav>
+  <form class="add" id="addForm" autocomplete="off">
+    <input id="addUrl" type="url" placeholder="Paste a link to add it" aria-label="Link to add">
+    <button type="submit">Add</button>
+  </form>
+  <button type="button" class="save" id="save" hidden></button>
+  <label class="check top-opt" title="Needs a browser extension that lifts embedding limits"><input type="checkbox" id="force"> Embed all sites</label>
+  <a class="icon" href="https://github.com/mkj69/multi-agent-survey-site" target="_blank" rel="noopener" aria-label="GitHub repository" title="GitHub repository"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+  <button class="icon" id="theme" type="button" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+</header>
+<div class="app" id="app">
+  <aside class="side">
+    <div class="filters">
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" data-v="key" class="on">Key works</button>
+        <button type="button" role="tab" data-v="all">All</button>
+        <button type="button" role="tab" data-v="star">Starred</button>
+      </div>
+      <input id="q" type="search" placeholder="Search titles, authors, summaries" aria-label="Search">
+      <div class="row">
+        <select id="cat" aria-label="Category"><option value="">All categories</option></select>
+        <select id="type" aria-label="Type"><option value="">All types</option></select>
+      </div>
+      <div class="row">
+        <select id="tag" aria-label="Tag"><option value="">All tags</option></select>
+        <select id="sort" aria-label="Sort">
+          <option value="new">Newest first</option>
+          <option value="old">Oldest first</option>
+          <option value="cited">Most cited</option>
+        </select>
+      </div>
+      <div class="row checks">
+        <label class="check" title="Posts that react to another item are grouped under it"><input type="checkbox" id="showrx"> Show reactions as items</label>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+    <ol class="list" id="list"></ol>
+    <button class="more" id="more" type="button">Show more</button>
+    <div class="footer"><span id="dailyState">Daily updates</span> · <a href="#" id="dailyToggle"></a></div>
+  </aside>
+  <main class="reader" id="reader">
+    <div class="empty" id="empty">
+      <h1>Multi-Agent Reader</h1>
+      <p>Papers, posts, code and discussions on multi-agent AI systems: agent swarms and how they scale, orchestration of agent teams, debate and collaboration, agent societies, multi-agent risks, protocols, and the classic work they build on. Pick an item on the left to read it here.</p>
+      <p class="muted" id="updated"></p>
+    </div>
+    <article id="doc" hidden>
+      <div class="dochead">
+        <button class="back" id="back" type="button">← List</button>
+        <div class="meta">
+          <h2><button type="button" class="star-btn" id="docStar" aria-label="Star">☆</button><span id="docTitle"></span></h2>
+          <p id="docSub"></p>
+          <p class="sum" id="docSum"></p>
+          <p class="chips" id="docTags"></p>
+        </div>
+        <div class="actions"><a class="open" id="docOpen" target="_blank" rel="noopener">Open original ↗</a><a class="open subtle" id="docHn" href="#" hidden>HN discussion</a></div>
+      </div>
+      <div class="frame" id="frame"></div>
+      <section class="reactions" id="reactions" hidden></section>
+      <section class="comments">
+        <h3>Comments</h3>
+        <div id="giscus"></div>
+      </section>
+    </article>
+  </main>
+</div>
+<script src="assets/config.js?v=3"></script>
+<script src="assets/app.js?v=6"></script>
+</body>
+</html>

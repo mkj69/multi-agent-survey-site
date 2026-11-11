@@ -1,0 +1,646 @@
+[
+ {
+  "key": "condorcet1785",
+  "year": 1785,
+  "cat": "found",
+  "title": "Essay on the Application of Analysis to the Probability of Majority Decisions",
+  "who": "Condorcet",
+  "url": "https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem",
+  "short": "Condorcet jury theorem",
+  "note": "If voters are independent and each is right more often than not, a majority vote approaches certainty as the group grows. Correlated errors break the result, which is why ensembles of similar models gain less than the theorem promises."
+ },
+ {
+  "key": "amdahl1967",
+  "year": 1967,
+  "cat": "found",
+  "title": "Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities",
+  "who": "Amdahl",
+  "url": "https://en.wikipedia.org/wiki/Amdahl%27s_law",
+  "short": "Amdahl's law",
+  "note": "The part of a job that must run in sequence caps the speedup from adding processors. The same limit applies to adding agents to a task with serial steps."
+ },
+ {
+  "key": "brooks1975",
+  "year": 1975,
+  "cat": "found",
+  "title": "The Mythical Man-Month",
+  "who": "Brooks",
+  "url": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month",
+  "short": "Brooks's law",
+  "note": "Adding people to a late software project makes it later, because training and communication costs grow with team size. An early statement of coordination overhead.",
+  "from": [
+   "amdahl1967"
+  ]
+ },
+ {
+  "key": "hearsay1980",
+  "year": 1980,
+  "cat": "found",
+  "title": "The Hearsay-II Speech-Understanding System: Integrating Knowledge to Resolve Uncertainty",
+  "who": "Erman, Hayes-Roth, Lesser, Reddy",
+  "short": "Blackboard (Hearsay-II)",
+  "note": "Independent knowledge sources cooperate by reading and writing a shared blackboard instead of messaging each other. Shared-state coordination of this kind returns in agent teams that coordinate through files, git or a database."
+ },
+ {
+  "key": "cnp1980",
+  "year": 1980.5,
+  "cat": "found",
+  "title": "The Contract Net Protocol: High-Level Communication and Control in a Distributed Problem Solver",
+  "who": "Smith",
+  "short": "Contract Net",
+  "note": "A manager announces a task, contractors bid, and the manager awards it. The first explicit protocol for dividing work among autonomous problem solvers."
+ },
+ {
+  "key": "som1986",
+  "year": 1986,
+  "cat": "found",
+  "title": "The Society of Mind",
+  "who": "Minsky",
+  "url": "https://en.wikipedia.org/wiki/Society_of_Mind",
+  "short": "Society of Mind",
+  "note": "Intelligence described as the interaction of many simple agents, none intelligent alone. Often cited as the intellectual root of LLM multi-agent systems."
+ },
+ {
+  "key": "boids1987",
+  "year": 1987,
+  "cat": "found",
+  "title": "Flocks, Herds, and Schools: A Distributed Behavioral Model",
+  "who": "Reynolds",
+  "url": "https://www.red3d.com/cwr/boids/",
+  "short": "Boids",
+  "note": "Three local rules (separation, alignment, cohesion) produce realistic flocking with no leader. The standard example of global order from local interaction."
+ },
+ {
+  "key": "gustafson1988",
+  "year": 1988,
+  "cat": "found",
+  "title": "Reevaluating Amdahl's Law",
+  "who": "Gustafson",
+  "short": "Gustafson's law",
+  "note": "When the problem grows with the number of processors, the serial fraction shrinks and speedup keeps rising. The optimistic counterpart to Amdahl, relevant when more agents take on more work rather than the same work.",
+  "from": [
+   "amdahl1967"
+  ]
+ },
+ {
+  "key": "kqml1994",
+  "year": 1994,
+  "cat": "infra",
+  "title": "KQML as an Agent Communication Language",
+  "who": "Finin, Fritzson, McKay, McEntire",
+  "short": "KQML",
+  "note": "A message language for software agents built on speech acts (ask, tell, achieve). The ancestor of later agent communication standards such as FIPA ACL and, loosely, today's agent protocols.",
+  "from": [
+   "cnp1980"
+  ]
+ },
+ {
+  "key": "markov1994",
+  "year": 1994.5,
+  "cat": "found",
+  "title": "Markov Games as a Framework for Multi-Agent Reinforcement Learning",
+  "who": "Littman",
+  "short": "Markov games",
+  "note": "Extends reinforcement learning to several agents acting in one environment, using stochastic games. The formal starting point of multi-agent reinforcement learning."
+ },
+ {
+  "key": "pso1995",
+  "year": 1995,
+  "cat": "found",
+  "title": "Particle Swarm Optimization",
+  "who": "Kennedy, Eberhart",
+  "short": "Particle swarm",
+  "note": "A population of candidate solutions moves through the search space, pulled toward its own best and the swarm's best. The source of the word 'swarm' in optimisation.",
+  "from": [
+   "boids1987"
+  ]
+ },
+ {
+  "key": "bdi1995",
+  "year": 1995.5,
+  "cat": "found",
+  "title": "BDI Agents: From Theory to Practice",
+  "who": "Rao, Georgeff",
+  "short": "BDI agents",
+  "note": "Agents modelled by beliefs, desires and intentions, with a practical architecture for acting on them. A dominant design for classic autonomous agents."
+ },
+ {
+  "key": "antsystem1996",
+  "year": 1996,
+  "cat": "found",
+  "title": "Ant System: Optimization by a Colony of Cooperating Agents",
+  "who": "Dorigo, Maniezzo, Colorni",
+  "short": "Ant colony",
+  "note": "Simple agents leave pheromone trails that others follow, solving routing problems through indirect communication (stigmergy).",
+  "from": [
+   "boids1987"
+  ]
+ },
+ {
+  "key": "surowiecki2004",
+  "year": 2004,
+  "cat": "found",
+  "title": "The Wisdom of Crowds",
+  "who": "Surowiecki",
+  "url": "https://en.wikipedia.org/wiki/Wisdom_of_the_crowd",
+  "short": "Wisdom of crowds",
+  "note": "Groups beat their best members when opinions are diverse, independent and aggregated well. The conditions that LLM ensembles often fail to meet.",
+  "from": [
+   "condorcet1785"
+  ]
+ },
+ {
+  "key": "woolley2010",
+  "year": 2010,
+  "cat": "found",
+  "title": "Evidence for a Collective Intelligence Factor in the Performance of Human Groups",
+  "who": "Woolley, Chabris, Pentland, Hashmi, Malone",
+  "short": "Collective intelligence factor",
+  "note": "A single factor predicts how well human groups do across many tasks, linked more to turn-taking and social sensitivity than to the members' individual intelligence. Later tested on LLM agent groups.",
+  "from": [
+   "surowiecki2004"
+  ]
+ },
+ {
+  "key": "lorenz2011",
+  "year": 2011,
+  "cat": "found",
+  "title": "How Social Influence Can Undermine the Wisdom of Crowd Effect",
+  "who": "Lorenz, Rauhut, Schweitzer, Helbing",
+  "short": "Influence vs crowd wisdom",
+  "note": "Letting people see each other's estimates narrows the spread of answers without making them more accurate. The human analogue of agents converging in debate.",
+  "from": [
+   "surowiecki2004"
+  ]
+ },
+ {
+  "key": "foerster2016",
+  "year": 2016,
+  "cat": "society",
+  "title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+  "who": "Foerster, Assael, de Freitas, Whiteson",
+  "short": "Learned communication",
+  "note": "Agents learn a communication protocol end to end while learning to solve a shared task. Starts the line of work on emergent communication.",
+  "from": [
+   "markov1994"
+  ]
+ },
+ {
+  "key": "maddpg2017",
+  "year": 2017,
+  "cat": "found",
+  "title": "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments",
+  "who": "Lowe, Wu, Tamar, Harb, Abbeel, Mordatch",
+  "short": "MADDPG",
+  "note": "Centralised training with decentralised execution: each agent's critic sees everyone during training, each actor uses only local observations. A standard deep MARL recipe.",
+  "from": [
+   "markov1994"
+  ]
+ },
+ {
+  "key": "qmix2018",
+  "year": 2018,
+  "cat": "found",
+  "title": "QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning",
+  "who": "Rashid, Samvelyan, de Witt, Farquhar, Foerster, Whiteson",
+  "short": "QMIX",
+  "note": "Learns a team value that mixes per-agent values monotonically, so each agent can act greedily on its own value. A core method for training cooperative teams.",
+  "from": [
+   "maddpg2017"
+  ]
+ },
+ {
+  "key": "hideseek2019",
+  "year": 2019.7,
+  "cat": "society",
+  "title": "Emergent Tool Use From Multi-Agent Autocurricula",
+  "who": "Baker et al. (OpenAI)",
+  "short": "Hide-and-seek",
+  "note": "Competing teams of agents in a physics world invent a sequence of strategies and tool uses that no one programmed, driven only by competition.",
+  "from": [
+   "maddpg2017"
+  ]
+ },
+ {
+  "key": "alphastar2019",
+  "year": 2019.8,
+  "cat": "found",
+  "title": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning",
+  "who": "Vinyals et al. (DeepMind)",
+  "url": "https://en.wikipedia.org/wiki/AlphaStar_(software)",
+  "short": "AlphaStar",
+  "note": "A league of agents trained against each other reaches grandmaster level. Shows population-based multi-agent training at scale.",
+  "from": [
+   "markov1994"
+  ]
+ },
+ {
+  "key": "outofone2022",
+  "year": 2022.7,
+  "cat": "society",
+  "title": "Out of One, Many: Using Language Models to Simulate Human Samples",
+  "who": "Argyle et al.",
+  "short": "Silicon samples",
+  "note": "Conditioning GPT-3 on demographic backstories reproduces the answer patterns of human survey subgroups. Opens the use of LLMs as simulated people."
+ },
+ {
+  "key": "camel2023",
+  "year": 2023.25,
+  "cat": "collab",
+  "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+  "who": "Li, Hammoud, Itani, Khizbullin, Ghanem",
+  "short": "CAMEL",
+  "note": "Two LLM agents role-play a user and an assistant to complete tasks with little human input, and the paper studies how such conversations fail. One of the first LLM multi-agent frameworks.",
+  "from": [
+   "som1986"
+  ]
+ },
+ {
+  "key": "genagents2023",
+  "year": 2023.27,
+  "cat": "society",
+  "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+  "who": "Park, O'Brien, Cai, Morris, Liang, Bernstein",
+  "short": "Generative agents",
+  "note": "25 LLM agents with memory, reflection and planning live in a small town and produce believable social behaviour, such as spreading invitations to a party.",
+  "from": [
+   "outofone2022"
+  ]
+ },
+ {
+  "key": "debate2023",
+  "year": 2023.39,
+  "cat": "collab",
+  "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+  "who": "Du, Li, Torralba, Tenenbaum, Mordatch",
+  "short": "Multiagent debate",
+  "note": "Several copies of a model answer, read each other's answers and revise over rounds; accuracy on reasoning and factual tasks improves. Launched the multi-agent debate literature.",
+  "from": [
+   "som1986",
+   "condorcet1785"
+  ]
+ },
+ {
+  "key": "mad2023",
+  "year": 2023.41,
+  "cat": "collab",
+  "title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+  "who": "Liang et al.",
+  "short": "MAD",
+  "note": "Agents argue opposite sides before a judge, to escape the 'degeneration of thought' of self-reflection.",
+  "from": [
+   "debate2023"
+  ]
+ },
+ {
+  "key": "chatdev2023",
+  "year": 2023.54,
+  "cat": "orch",
+  "title": "ChatDev: Communicative Agents for Software Development",
+  "who": "Qian et al.",
+  "short": "ChatDev",
+  "note": "A virtual software company of role-playing agents (CEO, programmer, tester) moves through design, coding and testing phases by chatting.",
+  "from": [
+   "camel2023"
+  ]
+ },
+ {
+  "key": "metagpt2023",
+  "year": 2023.58,
+  "cat": "orch",
+  "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+  "who": "Hong et al.",
+  "short": "MetaGPT",
+  "note": "Encodes human standard operating procedures into an agent assembly line, with structured documents passed between roles to reduce cascading errors.",
+  "from": [
+   "camel2023"
+  ]
+ },
+ {
+  "key": "autogen2023",
+  "year": 2023.62,
+  "cat": "infra",
+  "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "who": "Wu et al. (Microsoft)",
+  "short": "AutoGen",
+  "note": "A framework for building applications from conversable agents that talk to each other, to tools and to humans. One of the most used multi-agent frameworks.",
+  "from": [
+   "camel2023"
+  ]
+ },
+ {
+  "key": "agentverse2023",
+  "year": 2023.63,
+  "cat": "collab",
+  "title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+  "who": "Chen et al.",
+  "short": "AgentVerse",
+  "note": "A framework that recruits and adjusts groups of expert agents for each task, and reports emergent behaviours, both helpful and harmful, in the groups.",
+  "from": [
+   "camel2023"
+  ]
+ },
+ {
+  "key": "moreagents2024",
+  "year": 2024.1,
+  "cat": "scale",
+  "title": "More Agents Is All You Need",
+  "who": "Li, Zhang, Yu, Fu, Ye",
+  "short": "More agents",
+  "note": "Plain sampling and majority voting: accuracy rises with the number of agents, and the gain is larger on harder tasks. The simplest agent-count scaling result.",
+  "from": [
+   "debate2023",
+   "condorcet1785"
+  ]
+ },
+ {
+  "key": "collusion2024",
+  "year": 2024.11,
+  "cat": "risk",
+  "title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+  "who": "Motwani et al.",
+  "short": "Secret collusion",
+  "note": "Formalises how agents could hide messages from overseers with steganography, and measures how capable current models are at it."
+ },
+ {
+  "key": "llmcalls2024",
+  "year": 2024.18,
+  "cat": "scale",
+  "title": "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+  "who": "Chen, Davis, Hanin, Bailis, Stoica, Zaharia, Zou",
+  "short": "More LLM calls",
+  "note": "For voting systems, accuracy can first rise and then fall as calls increase, because easy and hard queries respond in opposite ways. A warning against assuming monotone gains.",
+  "from": [
+   "moreagents2024"
+  ]
+ },
+ {
+  "key": "macnet2024",
+  "year": 2024.44,
+  "cat": "scale",
+  "title": "Scaling Large Language Model-based Multi-Agent Collaboration",
+  "who": "Qian et al.",
+  "short": "MacNet",
+  "note": "Organises agents in directed acyclic graphs and scales to over a thousand agents; reports a logistic 'collaborative scaling law' and that irregular topologies beat regular ones.",
+  "from": [
+   "chatdev2023"
+  ]
+ },
+ {
+  "key": "moa2024",
+  "year": 2024.43,
+  "cat": "collab",
+  "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+  "who": "Wang, Wang, Athiwaratkun, Zhang, Zou",
+  "short": "Mixture-of-Agents",
+  "note": "Layers of different open models each refine the previous layer's answers; the mixture beats a single strong model on chat benchmarks.",
+  "from": [
+   "debate2023"
+  ]
+ },
+ {
+  "key": "promptinfection2024",
+  "year": 2024.77,
+  "cat": "risk",
+  "title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+  "who": "Lee, Tiwari",
+  "short": "Prompt infection",
+  "note": "A malicious prompt can copy itself from agent to agent like a virus, spreading through a multi-agent system.",
+  "from": [
+   "collusion2024"
+  ]
+ },
+ {
+  "key": "magentic2024",
+  "year": 2024.85,
+  "cat": "orch",
+  "title": "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
+  "who": "Fourney et al. (Microsoft)",
+  "short": "Magentic-One",
+  "note": "An orchestrator agent plans, tracks progress and directs specialist agents for web browsing, files and code.",
+  "from": [
+   "autogen2023"
+  ]
+ },
+ {
+  "key": "mcp2024",
+  "year": 2024.9,
+  "cat": "infra",
+  "title": "Introducing the Model Context Protocol",
+  "who": "Anthropic",
+  "url": "https://www.anthropic.com/news/model-context-protocol",
+  "short": "MCP",
+  "note": "An open protocol for connecting models to tools and data sources. Became a common layer under agent systems.",
+  "from": [
+   "kqml1994"
+  ]
+ },
+ {
+  "key": "marisks2025",
+  "year": 2025.12,
+  "cat": "risk",
+  "title": "Multi-Agent Risks from Advanced AI",
+  "who": "Hammond et al.",
+  "short": "Multi-agent risks",
+  "note": "A taxonomy of risks that arise when many advanced AI agents interact: miscoordination, conflict and collusion, with their causes.",
+  "from": [
+   "collusion2024"
+  ]
+ },
+ {
+  "key": "agentsociety2025",
+  "year": 2025.12,
+  "cat": "society",
+  "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors",
+  "who": "Piao et al.",
+  "short": "AgentSociety",
+  "note": "Simulates over ten thousand LLM agents in a city-like environment to study social phenomena such as polarisation and policy effects.",
+  "from": [
+   "genagents2023"
+  ]
+ },
+ {
+  "key": "stopmad2025",
+  "year": 2025.12,
+  "cat": "collab",
+  "title": "Stop Overvaluing Multi-Agent Debate -- We Must Rethink Evaluation and Embrace Model Heterogeneity",
+  "who": "Zhang et al.",
+  "short": "Stop overvaluing MAD",
+  "note": "Under fair comparisons, multi-agent debate often fails to beat simple baselines such as self-consistency; mixing different models helps more.",
+  "from": [
+   "debate2023"
+  ]
+ },
+ {
+  "key": "mast2025",
+  "year": 2025.2,
+  "cat": "collab",
+  "title": "Why Do Multi-Agent LLM Systems Fail?",
+  "who": "Cemri, Pan, Yang et al.",
+  "short": "MAST failures",
+  "note": "Annotates failed traces of popular multi-agent frameworks and groups the failures into specification problems, inter-agent misalignment and weak verification.",
+  "from": [
+   "chatdev2023",
+   "metagpt2023"
+  ]
+ },
+ {
+  "key": "a2a2025",
+  "year": 2025.27,
+  "cat": "infra",
+  "title": "A2A: Agent2Agent Protocol",
+  "who": "Google, then Linux Foundation",
+  "url": "https://github.com/a2aproject/A2A",
+  "short": "A2A",
+  "note": "An open protocol for agents built by different vendors to discover each other and exchange tasks. Complements MCP, which links agents to tools.",
+  "from": [
+   "mcp2024"
+  ]
+ },
+ {
+  "key": "cognition2025",
+  "year": 2025.45,
+  "cat": "orch",
+  "title": "Don't Build Multi-Agents",
+  "who": "Yan (Cognition)",
+  "url": "https://cognition.com/blog/dont-build-multi-agents",
+  "short": "Don't build multi-agents",
+  "note": "Argues that parallel subagents make conflicting decisions without shared context, and recommends single-threaded agents. The main practitioner counterpoint to agent teams.",
+  "from": [
+   "magentic2024"
+  ]
+ },
+ {
+  "key": "anthresearch2025",
+  "year": 2025.45,
+  "cat": "orch",
+  "title": "How we built our multi-agent research system",
+  "who": "Anthropic",
+  "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+  "short": "Lead and subagents (research)",
+  "note": "A lead agent spawns parallel subagents to search; the system beats a single agent on breadth-first research, at the cost of many more tokens.",
+  "from": [
+   "magentic2024"
+  ]
+ },
+ {
+  "key": "sciscale2025",
+  "year": 2025.94,
+  "cat": "scale",
+  "title": "Towards a Science of Scaling Agent Systems",
+  "who": "Kim et al. (Google Research, MIT)",
+  "short": "Science of scaling agents",
+  "note": "A controlled comparison of single-agent and several multi-agent architectures across tasks: coordination helps on parallelisable tasks and hurts on sequential ones.",
+  "from": [
+   "moreagents2024",
+   "mast2025"
+  ]
+ },
+ {
+  "key": "cursor2026",
+  "year": 2026.04,
+  "cat": "orch",
+  "title": "Scaling long-running autonomous coding",
+  "who": "Lin (Cursor)",
+  "url": "https://cursor.com/blog/scaling-agents",
+  "short": "Cursor planners and workers",
+  "note": "Hundreds of coding agents, split into planners and workers, run for about a week on one codebase; the post reports what broke with flat coordination.",
+  "from": [
+   "anthresearch2025"
+  ]
+ },
+ {
+  "key": "ccompiler2026",
+  "year": 2026.1,
+  "cat": "orch",
+  "title": "Building a C compiler with a team of parallel Claudes",
+  "who": "Anthropic",
+  "url": "https://www.anthropic.com/engineering/building-c-compiler",
+  "short": "Parallel Claudes C compiler",
+  "note": "16 parallel agents over about two weeks write a roughly 100,000-line Rust C compiler, coordinating through git and tests rather than an orchestrator.",
+  "from": [
+   "cursor2026",
+   "hearsay1980"
+  ]
+ },
+ {
+  "key": "metr2026",
+  "year": 2026.65,
+  "cat": "risk",
+  "title": "OpenAI Hugging Face incident investigation",
+  "who": "METR",
+  "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+  "short": "METR incident report",
+  "note": "An independent investigation of a training run in which about 1,200 agents that should have been isolated coordinated through a shared message board. The best-audited case of unsanctioned agent coordination.",
+  "from": [
+   "marisks2025"
+  ]
+ },
+ {
+  "key": "navier2026",
+  "year": 2026.69,
+  "cat": "scale",
+  "title": "On the Navier-Stokes Millennium Prize Problem",
+  "who": "OpenAI",
+  "url": "https://openai.com/index/navier-stokes-solution/",
+  "short": "10,000-agent run",
+  "note": "OpenAI reports a run of about 10,000 agents behind a claimed result on the Navier-Stokes problem. The largest swarm claimed so far; the result and the role of the swarm remain disputed.",
+  "from": [
+   "macnet2024"
+  ]
+ },
+ {
+  "key": "ord2026",
+  "year": 2026.72,
+  "cat": "scale",
+  "title": "Swarm Scaling",
+  "who": "Ord",
+  "url": "https://www.tobyord.com/writing/swarm-scaling",
+  "short": "Swarm scaling (Ord)",
+  "note": "Fits how performance grows with the number of agents and argues that swarms mostly buy speed. Ord later removed the part based on OpenAI's Navier-Stokes chart.",
+  "from": [
+   "moreagents2024",
+   "amdahl1967"
+  ]
+ },
+ {
+  "key": "s3_2026",
+  "year": 2026.85,
+  "cat": "scale",
+  "title": "s³: Simple Scaling of Swarms via Cooperative Multi-agent RL",
+  "who": "Jha et al.",
+  "url": "https://scalingswarms.com/",
+  "short": "s³ (trained swarms)",
+  "note": "Trains copies of one small model with a shared team reward to coordinate only by messages; trained at 4 agents and tested up to 16, it helps most where information is split across agents.",
+  "from": [
+   "qmix2018",
+   "moreagents2024"
+  ]
+ },
+ {
+  "key": "mda2026",
+  "year": 2026.79,
+  "cat": "collab",
+  "title": "The Wealth of Agents: Scaling Agentic AI Across Developers",
+  "who": "Hanjie, Jimenez, Wang, Narasimhan",
+  "short": "Multi-developer agents",
+  "note": "Composes agents from many simulated specialist developers by routing subtasks; it beats single-developer systems on broad tasks but not on narrow ones or with generalist pools.",
+  "from": [
+   "moa2024"
+  ]
+ },
+ {
+  "key": "fable2026",
+  "year": 2026.86,
+  "cat": "scale",
+  "title": "Safely scaling multi-agent teams with Fable 5.2",
+  "who": "Zhang, Peng, Najt, Scholl, Martin",
+  "url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2/",
+  "short": "1,000-agent Lean proof",
+  "note": "A lead and 999 helpers, coordinating only through git and a shared database, formalise Fermat's Last Theorem in Lean in 28.7 hours, starting from given milestones and lemmas.",
+  "from": [
+   "ccompiler2026",
+   "hearsay1980"
+  ]
+ }
+]

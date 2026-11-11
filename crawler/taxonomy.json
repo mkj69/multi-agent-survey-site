@@ -1,0 +1,85 @@
+{
+ "categories": {
+  "scale": "Scaling agent swarms",
+  "orch": "Orchestration and agent teams",
+  "collab": "Collaboration, debate and roles",
+  "society": "Agent societies and emergence",
+  "risk": "Multi-agent risks and safety",
+  "infra": "Protocols, frameworks and costs",
+  "found": "Foundations: MAS, MARL, swarms"
+ },
+ "tags": {
+  "scale": [
+   "agent-count scaling",
+   "parallel agents",
+   "speed vs capability",
+   "large runs",
+   "scaling laws",
+   "test-time compute",
+   "critique",
+   "benchmark"
+  ],
+  "orch": [
+   "lead and subagents",
+   "coding agent teams",
+   "workflows",
+   "context isolation",
+   "verification",
+   "human oversight",
+   "harness design",
+   "case study"
+  ],
+  "collab": [
+   "debate",
+   "role-playing",
+   "voting and ensembles",
+   "communication topology",
+   "failure analysis",
+   "heterogeneous models",
+   "trained coordination",
+   "benchmark"
+  ],
+  "society": [
+   "generative agents",
+   "social simulation",
+   "emergent communication",
+   "cooperation and games",
+   "markets and economies",
+   "norms and culture"
+  ],
+  "risk": [
+   "collusion",
+   "error propagation",
+   "security and injection",
+   "unsanctioned coordination",
+   "governance",
+   "evaluation"
+  ],
+  "infra": [
+   "protocols",
+   "frameworks",
+   "memory and shared state",
+   "cost and economics",
+   "serving and systems",
+   "observability"
+  ],
+  "found": [
+   "multi-agent systems",
+   "MARL",
+   "swarm intelligence",
+   "collective intelligence",
+   "parallel computing limits",
+   "organisation theory"
+  ]
+ },
+ "types": [
+  "paper",
+  "blog",
+  "post",
+  "code",
+  "model",
+  "dataset",
+  "discussion",
+  "video"
+ ]
+}
