@@ -157,6 +157,10 @@ def main():
             cats = [c for c in j.get("cats", []) if c in TAG_CAT] or list(score(r["title"], r.get("text")))
             tags = [t for t in j.get("tags", []) if any(t in TAG_CAT[c] for c in cats)]
             accepted[k] = dict(r, cats=cats, tags=tags or tags_for(cats, r["title"], r.get("text")), how="llm")
+    # Model Context Protocol work is mostly about one agent calling tools. Keep an infra-only item only if it is about several agents.
+    multi = re.compile(r"multi[- ]?agent|agent[- ]to[- ]agent|\bA2A\b|\bACP\b|agents? communicat|interoperab|swarm|orchestrat|sub-?agents?|crewai|autogen|langgraph|agent (?:teams?|networks?|protocols?)", re.I)
+    for k in [k for k, r in accepted.items() if r["cats"] == ["infra"] and r.get("how") != "survey" and not multi.search(r["title"] + " " + (r.get("text") or ""))]:
+        del accepted[k]
     # Hand-picked items that must be included (crawler/forced.json).
     forced = json.load(open(os.path.join(HERE, "forced.json")))
     by_arxiv = {r.get("arxiv"): r for r in recs if r.get("arxiv")}

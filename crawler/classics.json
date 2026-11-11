@@ -39,7 +39,8 @@
   "title": "The Hearsay-II Speech-Understanding System: Integrating Knowledge to Resolve Uncertainty",
   "who": "Erman, Hayes-Roth, Lesser, Reddy",
   "short": "Blackboard (Hearsay-II)",
-  "note": "Independent knowledge sources cooperate by reading and writing a shared blackboard instead of messaging each other. Shared-state coordination of this kind returns in agent teams that coordinate through files, git or a database."
+  "note": "Independent knowledge sources cooperate by reading and writing a shared blackboard instead of messaging each other. Shared-state coordination of this kind returns in agent teams that coordinate through files, git or a database.",
+  "url": "https://doi.org/10.1145/356810.356816"
  },
  {
   "key": "cnp1980",
@@ -48,7 +49,8 @@
   "title": "The Contract Net Protocol: High-Level Communication and Control in a Distributed Problem Solver",
   "who": "Smith",
   "short": "Contract Net",
-  "note": "A manager announces a task, contractors bid, and the manager awards it. The first explicit protocol for dividing work among autonomous problem solvers."
+  "note": "A manager announces a task, contractors bid, and the manager awards it. The first explicit protocol for dividing work among autonomous problem solvers.",
+  "url": "https://doi.org/10.1109/TC.1980.1675516"
  },
  {
   "key": "som1986",
@@ -101,7 +103,8 @@
   "title": "Markov Games as a Framework for Multi-Agent Reinforcement Learning",
   "who": "Littman",
   "short": "Markov games",
-  "note": "Extends reinforcement learning to several agents acting in one environment, using stochastic games. The formal starting point of multi-agent reinforcement learning."
+  "note": "Extends reinforcement learning to several agents acting in one environment, using stochastic games. The formal starting point of multi-agent reinforcement learning.",
+  "url": "https://doi.org/10.1016/B978-1-55860-335-6.50027-1"
  },
  {
   "key": "pso1995",
@@ -122,7 +125,8 @@
   "title": "BDI Agents: From Theory to Practice",
   "who": "Rao, Georgeff",
   "short": "BDI agents",
-  "note": "Agents modelled by beliefs, desires and intentions, with a practical architecture for acting on them. A dominant design for classic autonomous agents."
+  "note": "Agents modelled by beliefs, desires and intentions, with a practical architecture for acting on them. A dominant design for classic autonomous agents.",
+  "url": "https://cdn.aaai.org/ICMAS/1995/ICMAS95-042.pdf"
  },
  {
   "key": "antsystem1996",
@@ -457,7 +461,8 @@
   "note": "Simulates over ten thousand LLM agents in a city-like environment to study social phenomena such as polarisation and policy effects.",
   "from": [
    "genagents2023"
-  ]
+  ],
+  "url": "https://arxiv.org/abs/2502.08691"
  },
  {
   "key": "stopmad2025",

@@ -77,6 +77,8 @@ def main():
         author = r.get("author") or ""
         author = "" if CJK.search(author) else re.sub(r"\s*\([^)]*\)", "", author).strip()
         cats = sorted({TOPIC2CAT[t] for t in r.get("topics", []) if t in TOPIC2CAT})
+        if r.get("type") == "wiki":
+            r["date"] = ""  # the survey recorded the fetch date, not a publication date
         out.append(dict(key="sv:" + r["slug"], type=typ, title=title.strip(), url=url, date=(r.get("date") or "")[:10], authors=[author] if author else [],
                         abstract=abstract, cat_hint=cats[0] if cats else None, survey_topics=r.get("topics", []), quote=f"x:{quote}" if quote else None,
                         likes=likes, via=["survey"]))

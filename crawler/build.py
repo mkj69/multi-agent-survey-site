@@ -174,6 +174,8 @@ def main():
                    n=r.get("cites") or r.get("stars") or r.get("points") or 0, s=False, added=datetime.date.today().isoformat())
         if e:
             rec["e"] = e
+        if r.get("how") == "survey":
+            rec["sv"] = True
         if text and (r.get("arxiv") or r["type"] == "code") and not CJK.search(text):
             rec["x"] = text[:420] + ("…" if len(text) > 420 else "")
         items[iid] = rec
@@ -247,6 +249,9 @@ def main():
                 it["e"] = e
             items[iid] = it
         it["cl"] = True
+        if "wikipedia.org" in it["u"]:
+            # A Wikipedia page stands in for the classic: show the classic's title, author and year, not the page's fetch date.
+            it.update(t=c["title"], a=c["who"], d=str(int(c["year"])))
         if c["cat"] not in it["c"]:
             it["c"] = sorted(set(it["c"] + [c["cat"]]))
         nodes.append(dict(key=c["key"], year=c["year"], cat=c["cat"], short=c["short"], title=c["title"], who=c["who"], note=c["note"], id=it["id"], url=it["u"], date=it["d"]))

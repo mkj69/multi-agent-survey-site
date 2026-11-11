@@ -1,0 +1,871 @@
+{
+"categories": {
+"scale": "Scaling agent swarms",
+"orch": "Orchestration and agent teams",
+"collab": "Collaboration, debate and roles",
+"society": "Agent societies and emergence",
+"risk": "Multi-agent risks and safety",
+"infra": "Protocols, frameworks and costs",
+"found": "Foundations: MAS, MARL, swarms"
+},
+"nodes": [
+{
+"key": "condorcet1785",
+"year": 1785,
+"cat": "found",
+"short": "Condorcet jury theorem",
+"title": "Essay on the Application of Analysis to the Probability of Majority Decisions",
+"who": "Condorcet",
+"note": "If voters are independent and each is right more often than not, a majority vote approaches certainty as the group grows. Correlated errors break the result, which is why ensembles of similar models gain less than the theorem promises.",
+"id": "url:e7028e1e1f01",
+"url": "https://en.wikipedia.org/wiki/Condorcet%27s_jury_theorem",
+"date": "1785"
+},
+{
+"key": "amdahl1967",
+"year": 1967,
+"cat": "found",
+"short": "Amdahl's law",
+"title": "Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities",
+"who": "Amdahl",
+"note": "The part of a job that must run in sequence caps the speedup from adding processors. The same limit applies to adding agents to a task with serial steps.",
+"id": "url:ce7b68b06b07",
+"url": "https://en.wikipedia.org/wiki/Amdahl%27s_law",
+"date": "1967"
+},
+{
+"key": "brooks1975",
+"year": 1975,
+"cat": "found",
+"short": "Brooks's law",
+"title": "The Mythical Man-Month",
+"who": "Brooks",
+"note": "Adding people to a late software project makes it later, because training and communication costs grow with team size. An early statement of coordination overhead.",
+"id": "classic:brooks1975",
+"url": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month",
+"date": "1975"
+},
+{
+"key": "hearsay1980",
+"year": 1980,
+"cat": "found",
+"short": "Blackboard (Hearsay-II)",
+"title": "The Hearsay-II Speech-Understanding System: Integrating Knowledge to Resolve Uncertainty",
+"who": "Erman, Hayes-Roth, Lesser, Reddy",
+"note": "Independent knowledge sources cooperate by reading and writing a shared blackboard instead of messaging each other. Shared-state coordination of this kind returns in agent teams that coordinate through files, git or a database.",
+"id": "url:9c62cef1733b",
+"url": "https://doi.org/10.1145/356810.356816",
+"date": "1980-06-01"
+},
+{
+"key": "cnp1980",
+"year": 1980.5,
+"cat": "found",
+"short": "Contract Net",
+"title": "The Contract Net Protocol: High-Level Communication and Control in a Distributed Problem Solver",
+"who": "Smith",
+"note": "A manager announces a task, contractors bid, and the manager awards it. The first explicit protocol for dividing work among autonomous problem solvers.",
+"id": "url:7992a8bd1bf9",
+"url": "https://doi.org/10.1109/TC.1980.1675516",
+"date": "1980-12-01"
+},
+{
+"key": "som1986",
+"year": 1986,
+"cat": "found",
+"short": "Society of Mind",
+"title": "The Society of Mind",
+"who": "Minsky",
+"note": "Intelligence described as the interaction of many simple agents, none intelligent alone. Often cited as the intellectual root of LLM multi-agent systems.",
+"id": "url:828dfcdd9f10",
+"url": "https://en.wikipedia.org/wiki/Society_of_Mind",
+"date": "1986"
+},
+{
+"key": "boids1987",
+"year": 1987,
+"cat": "found",
+"short": "Boids",
+"title": "Flocks, Herds, and Schools: A Distributed Behavioral Model",
+"who": "Reynolds",
+"note": "Three local rules (separation, alignment, cohesion) produce realistic flocking with no leader. The standard example of global order from local interaction.",
+"id": "url:a86810bbe856",
+"url": "https://www.red3d.com/cwr/boids",
+"date": "2001-09-06"
+},
+{
+"key": "gustafson1988",
+"year": 1988,
+"cat": "found",
+"short": "Gustafson's law",
+"title": "Reevaluating Amdahl's Law",
+"who": "Gustafson",
+"note": "When the problem grows with the number of processors, the serial fraction shrinks and speedup keeps rising. The optimistic counterpart to Amdahl, relevant when more agents take on more work rather than the same work.",
+"id": "url:22759f859eb3",
+"url": "https://doi.org/10.1145/42411.42415",
+"date": "1988-05-01"
+},
+{
+"key": "kqml1994",
+"year": 1994,
+"cat": "infra",
+"short": "KQML",
+"title": "KQML as an Agent Communication Language",
+"who": "Finin, Fritzson, McKay, McEntire",
+"note": "A message language for software agents built on speech acts (ask, tell, achieve). The ancestor of later agent communication standards such as FIPA ACL and, loosely, today's agent protocols.",
+"id": "url:275eef34aa25",
+"url": "https://doi.org/10.1145/191246.191322",
+"date": "1994"
+},
+{
+"key": "markov1994",
+"year": 1994.5,
+"cat": "found",
+"short": "Markov games",
+"title": "Markov Games as a Framework for Multi-Agent Reinforcement Learning",
+"who": "Littman",
+"note": "Extends reinforcement learning to several agents acting in one environment, using stochastic games. The formal starting point of multi-agent reinforcement learning.",
+"id": "classic:markov1994",
+"url": "https://doi.org/10.1016/B978-1-55860-335-6.50027-1",
+"date": "1994"
+},
+{
+"key": "pso1995",
+"year": 1995,
+"cat": "found",
+"short": "Particle swarm",
+"title": "Particle Swarm Optimization",
+"who": "Kennedy, Eberhart",
+"note": "A population of candidate solutions moves through the search space, pulled toward its own best and the swarm's best. The source of the word 'swarm' in optimisation.",
+"id": "url:7f7c65c17168",
+"url": "https://doi.org/10.1109/ICNN.1995.488968",
+"date": "1995"
+},
+{
+"key": "bdi1995",
+"year": 1995.5,
+"cat": "found",
+"short": "BDI agents",
+"title": "BDI Agents: From Theory to Practice",
+"who": "Rao, Georgeff",
+"note": "Agents modelled by beliefs, desires and intentions, with a practical architecture for acting on them. A dominant design for classic autonomous agents.",
+"id": "classic:bdi1995",
+"url": "https://cdn.aaai.org/ICMAS/1995/ICMAS95-042.pdf",
+"date": "1995"
+},
+{
+"key": "antsystem1996",
+"year": 1996,
+"cat": "found",
+"short": "Ant colony",
+"title": "Ant System: Optimization by a Colony of Cooperating Agents",
+"who": "Dorigo, Maniezzo, Colorni",
+"note": "Simple agents leave pheromone trails that others follow, solving routing problems through indirect communication (stigmergy).",
+"id": "url:9e8de908967c",
+"url": "https://doi.org/10.1109/3477.484436",
+"date": "1996-02-01"
+},
+{
+"key": "surowiecki2004",
+"year": 2004,
+"cat": "found",
+"short": "Wisdom of crowds",
+"title": "The Wisdom of Crowds",
+"who": "Surowiecki",
+"note": "Groups beat their best members when opinions are diverse, independent and aggregated well. The conditions that LLM ensembles often fail to meet.",
+"id": "url:6cc84ed97bb2",
+"url": "https://en.wikipedia.org/wiki/Wisdom_of_the_crowd",
+"date": "2004"
+},
+{
+"key": "woolley2010",
+"year": 2010,
+"cat": "found",
+"short": "Collective intelligence factor",
+"title": "Evidence for a Collective Intelligence Factor in the Performance of Human Groups",
+"who": "Woolley, Chabris, Pentland, Hashmi, Malone",
+"note": "A single factor predicts how well human groups do across many tasks, linked more to turn-taking and social sensitivity than to the members' individual intelligence. Later tested on LLM agent groups.",
+"id": "url:23f9d5d23a1f",
+"url": "https://doi.org/10.1126/science.1193147",
+"date": "2010-10-29"
+},
+{
+"key": "lorenz2011",
+"year": 2011,
+"cat": "found",
+"short": "Influence vs crowd wisdom",
+"title": "How Social Influence Can Undermine the Wisdom of Crowd Effect",
+"who": "Lorenz, Rauhut, Schweitzer, Helbing",
+"note": "Letting people see each other's estimates narrows the spread of answers without making them more accurate. The human analogue of agents converging in debate.",
+"id": "url:13fb31b289f6",
+"url": "https://doi.org/10.1073/pnas.1008636108",
+"date": "2011-05-16"
+},
+{
+"key": "foerster2016",
+"year": 2016,
+"cat": "society",
+"short": "Learned communication",
+"title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+"who": "Foerster, Assael, de Freitas, Whiteson",
+"note": "Agents learn a communication protocol end to end while learning to solve a shared task. Starts the line of work on emergent communication.",
+"id": "arxiv:1605.06676",
+"url": "https://arxiv.org/abs/1605.06676",
+"date": "2016-05-21"
+},
+{
+"key": "maddpg2017",
+"year": 2017,
+"cat": "found",
+"short": "MADDPG",
+"title": "Multi-Agent Actor-Critic for Mixed Cooperative-Competitive Environments",
+"who": "Lowe, Wu, Tamar, Harb, Abbeel, Mordatch",
+"note": "Centralised training with decentralised execution: each agent's critic sees everyone during training, each actor uses only local observations. A standard deep MARL recipe.",
+"id": "arxiv:1706.02275",
+"url": "https://arxiv.org/abs/1706.02275",
+"date": "2017-06-07"
+},
+{
+"key": "qmix2018",
+"year": 2018,
+"cat": "found",
+"short": "QMIX",
+"title": "QMIX: Monotonic Value Function Factorisation for Deep Multi-Agent Reinforcement Learning",
+"who": "Rashid, Samvelyan, de Witt, Farquhar, Foerster, Whiteson",
+"note": "Learns a team value that mixes per-agent values monotonically, so each agent can act greedily on its own value. A core method for training cooperative teams.",
+"id": "arxiv:1803.11485",
+"url": "https://arxiv.org/abs/1803.11485",
+"date": "2018-03-30"
+},
+{
+"key": "hideseek2019",
+"year": 2019.7,
+"cat": "society",
+"short": "Hide-and-seek",
+"title": "Emergent Tool Use From Multi-Agent Autocurricula",
+"who": "Baker et al. (OpenAI)",
+"note": "Competing teams of agents in a physics world invent a sequence of strategies and tool uses that no one programmed, driven only by competition.",
+"id": "arxiv:1909.07528",
+"url": "http://arxiv.org/abs/1909.07528",
+"date": "2019-09-17"
+},
+{
+"key": "alphastar2019",
+"year": 2019.8,
+"cat": "found",
+"short": "AlphaStar",
+"title": "Grandmaster Level in StarCraft II Using Multi-Agent Reinforcement Learning",
+"who": "Vinyals et al. (DeepMind)",
+"note": "A league of agents trained against each other reaches grandmaster level. Shows population-based multi-agent training at scale.",
+"id": "url:d5443d777fcf",
+"url": "https://en.wikipedia.org/wiki/AlphaStar_(software)",
+"date": "2019"
+},
+{
+"key": "outofone2022",
+"year": 2022.7,
+"cat": "society",
+"short": "Silicon samples",
+"title": "Out of One, Many: Using Language Models to Simulate Human Samples",
+"who": "Argyle et al.",
+"note": "Conditioning GPT-3 on demographic backstories reproduces the answer patterns of human survey subgroups. Opens the use of LLMs as simulated people.",
+"id": "arxiv:2209.06899",
+"url": "https://arxiv.org/abs/2209.06899",
+"date": "2023-02-21"
+},
+{
+"key": "camel2023",
+"year": 2023.25,
+"cat": "collab",
+"short": "CAMEL",
+"title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+"who": "Li, Hammoud, Itani, Khizbullin, Ghanem",
+"note": "Two LLM agents role-play a user and an assistant to complete tasks with little human input, and the paper studies how such conversations fail. One of the first LLM multi-agent frameworks.",
+"id": "arxiv:2303.17760",
+"url": "https://arxiv.org/abs/2303.17760",
+"date": "2023-03-31"
+},
+{
+"key": "genagents2023",
+"year": 2023.27,
+"cat": "society",
+"short": "Generative agents",
+"title": "Generative Agents: Interactive Simulacra of Human Behavior",
+"who": "Park, O'Brien, Cai, Morris, Liang, Bernstein",
+"note": "25 LLM agents with memory, reflection and planning live in a small town and produce believable social behaviour, such as spreading invitations to a party.",
+"id": "arxiv:2304.03442",
+"url": "https://arxiv.org/abs/2304.03442",
+"date": "2023-04-07"
+},
+{
+"key": "debate2023",
+"year": 2023.39,
+"cat": "collab",
+"short": "Multiagent debate",
+"title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+"who": "Du, Li, Torralba, Tenenbaum, Mordatch",
+"note": "Several copies of a model answer, read each other's answers and revise over rounds; accuracy on reasoning and factual tasks improves. Launched the multi-agent debate literature.",
+"id": "arxiv:2305.14325",
+"url": "https://arxiv.org/abs/2305.14325",
+"date": "2023-05-23"
+},
+{
+"key": "mad2023",
+"year": 2023.41,
+"cat": "collab",
+"short": "MAD",
+"title": "Encouraging Divergent Thinking in Large Language Models through Multi-Agent Debate",
+"who": "Liang et al.",
+"note": "Agents argue opposite sides before a judge, to escape the 'degeneration of thought' of self-reflection.",
+"id": "arxiv:2305.19118",
+"url": "https://arxiv.org/abs/2305.19118",
+"date": "2023-05-30"
+},
+{
+"key": "chatdev2023",
+"year": 2023.54,
+"cat": "orch",
+"short": "ChatDev",
+"title": "ChatDev: Communicative Agents for Software Development",
+"who": "Qian et al.",
+"note": "A virtual software company of role-playing agents (CEO, programmer, tester) moves through design, coding and testing phases by chatting.",
+"id": "arxiv:2307.07924",
+"url": "https://arxiv.org/abs/2307.07924",
+"date": "2023-07-16"
+},
+{
+"key": "metagpt2023",
+"year": 2023.58,
+"cat": "orch",
+"short": "MetaGPT",
+"title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+"who": "Hong et al.",
+"note": "Encodes human standard operating procedures into an agent assembly line, with structured documents passed between roles to reduce cascading errors.",
+"id": "arxiv:2308.00352",
+"url": "https://arxiv.org/abs/2308.00352",
+"date": "2023-08-01"
+},
+{
+"key": "autogen2023",
+"year": 2023.62,
+"cat": "infra",
+"short": "AutoGen",
+"title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+"who": "Wu et al. (Microsoft)",
+"note": "A framework for building applications from conversable agents that talk to each other, to tools and to humans. One of the most used multi-agent frameworks.",
+"id": "arxiv:2308.08155",
+"url": "https://arxiv.org/abs/2308.08155",
+"date": "2023-08-16"
+},
+{
+"key": "agentverse2023",
+"year": 2023.63,
+"cat": "collab",
+"short": "AgentVerse",
+"title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+"who": "Chen et al.",
+"note": "A framework that recruits and adjusts groups of expert agents for each task, and reports emergent behaviours, both helpful and harmful, in the groups.",
+"id": "arxiv:2308.10848",
+"url": "https://arxiv.org/abs/2308.10848",
+"date": "2023-08-21"
+},
+{
+"key": "moreagents2024",
+"year": 2024.1,
+"cat": "scale",
+"short": "More agents",
+"title": "More Agents Is All You Need",
+"who": "Li, Zhang, Yu, Fu, Ye",
+"note": "Plain sampling and majority voting: accuracy rises with the number of agents, and the gain is larger on harder tasks. The simplest agent-count scaling result.",
+"id": "arxiv:2402.05120",
+"url": "https://arxiv.org/abs/2402.05120",
+"date": "2024-02-03"
+},
+{
+"key": "collusion2024",
+"year": 2024.11,
+"cat": "risk",
+"short": "Secret collusion",
+"title": "Secret Collusion among AI Agents: Multi-Agent Deception via Steganography",
+"who": "Motwani et al.",
+"note": "Formalises how agents could hide messages from overseers with steganography, and measures how capable current models are at it.",
+"id": "arxiv:2402.07510",
+"url": "https://arxiv.org/abs/2402.07510",
+"date": "2024-02-12"
+},
+{
+"key": "llmcalls2024",
+"year": 2024.18,
+"cat": "scale",
+"short": "More LLM calls",
+"title": "Are More LLM Calls All You Need? Towards Scaling Laws of Compound Inference Systems",
+"who": "Chen, Davis, Hanin, Bailis, Stoica, Zaharia, Zou",
+"note": "For voting systems, accuracy can first rise and then fall as calls increase, because easy and hard queries respond in opposite ways. A warning against assuming monotone gains.",
+"id": "arxiv:2403.02419",
+"url": "https://arxiv.org/abs/2403.02419",
+"date": "2024-03-04"
+},
+{
+"key": "macnet2024",
+"year": 2024.44,
+"cat": "scale",
+"short": "MacNet",
+"title": "Scaling Large Language Model-based Multi-Agent Collaboration",
+"who": "Qian et al.",
+"note": "Organises agents in directed acyclic graphs and scales to over a thousand agents; reports a logistic 'collaborative scaling law' and that irregular topologies beat regular ones.",
+"id": "arxiv:2406.07155",
+"url": "https://arxiv.org/abs/2406.07155",
+"date": "2024-06-11"
+},
+{
+"key": "moa2024",
+"year": 2024.43,
+"cat": "collab",
+"short": "Mixture-of-Agents",
+"title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+"who": "Wang, Wang, Athiwaratkun, Zhang, Zou",
+"note": "Layers of different open models each refine the previous layer's answers; the mixture beats a single strong model on chat benchmarks.",
+"id": "arxiv:2406.04692",
+"url": "https://arxiv.org/abs/2406.04692",
+"date": "2024-06-07"
+},
+{
+"key": "promptinfection2024",
+"year": 2024.77,
+"cat": "risk",
+"short": "Prompt infection",
+"title": "Prompt Infection: LLM-to-LLM Prompt Injection within Multi-Agent Systems",
+"who": "Lee, Tiwari",
+"note": "A malicious prompt can copy itself from agent to agent like a virus, spreading through a multi-agent system.",
+"id": "arxiv:2410.07283",
+"url": "https://arxiv.org/abs/2410.07283",
+"date": "2024-10-09"
+},
+{
+"key": "magentic2024",
+"year": 2024.85,
+"cat": "orch",
+"short": "Magentic-One",
+"title": "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
+"who": "Fourney et al. (Microsoft)",
+"note": "An orchestrator agent plans, tracks progress and directs specialist agents for web browsing, files and code.",
+"id": "arxiv:2411.04468",
+"url": "https://arxiv.org/abs/2411.04468",
+"date": "2024-11-07"
+},
+{
+"key": "mcp2024",
+"year": 2024.9,
+"cat": "infra",
+"short": "MCP",
+"title": "Introducing the Model Context Protocol",
+"who": "Anthropic",
+"note": "An open protocol for connecting models to tools and data sources. Became a common layer under agent systems.",
+"id": "classic:mcp2024",
+"url": "https://www.anthropic.com/news/model-context-protocol",
+"date": "2024"
+},
+{
+"key": "marisks2025",
+"year": 2025.12,
+"cat": "risk",
+"short": "Multi-agent risks",
+"title": "Multi-Agent Risks from Advanced AI",
+"who": "Hammond et al.",
+"note": "A taxonomy of risks that arise when many advanced AI agents interact: miscoordination, conflict and collusion, with their causes.",
+"id": "arxiv:2502.14143",
+"url": "https://arxiv.org/abs/2502.14143",
+"date": "2025-02-19"
+},
+{
+"key": "agentsociety2025",
+"year": 2025.12,
+"cat": "society",
+"short": "AgentSociety",
+"title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors",
+"who": "Piao et al.",
+"note": "Simulates over ten thousand LLM agents in a city-like environment to study social phenomena such as polarisation and policy effects.",
+"id": "arxiv:2502.08691",
+"url": "https://arxiv.org/abs/2502.08691",
+"date": "2025-02-12"
+},
+{
+"key": "stopmad2025",
+"year": 2025.12,
+"cat": "collab",
+"short": "Stop overvaluing MAD",
+"title": "Stop Overvaluing Multi-Agent Debate -- We Must Rethink Evaluation and Embrace Model Heterogeneity",
+"who": "Zhang et al.",
+"note": "Under fair comparisons, multi-agent debate often fails to beat simple baselines such as self-consistency; mixing different models helps more.",
+"id": "arxiv:2502.08788",
+"url": "https://arxiv.org/abs/2502.08788",
+"date": "2025-02-12"
+},
+{
+"key": "mast2025",
+"year": 2025.2,
+"cat": "collab",
+"short": "MAST failures",
+"title": "Why Do Multi-Agent LLM Systems Fail?",
+"who": "Cemri, Pan, Yang et al.",
+"note": "Annotates failed traces of popular multi-agent frameworks and groups the failures into specification problems, inter-agent misalignment and weak verification.",
+"id": "arxiv:2503.13657",
+"url": "https://arxiv.org/abs/2503.13657",
+"date": "2025-03-17"
+},
+{
+"key": "a2a2025",
+"year": 2025.27,
+"cat": "infra",
+"short": "A2A",
+"title": "A2A: Agent2Agent Protocol",
+"who": "Google, then Linux Foundation",
+"note": "An open protocol for agents built by different vendors to discover each other and exchange tasks. Complements MCP, which links agents to tools.",
+"id": "gh:a2aproject/a2a",
+"url": "https://github.com/a2aproject/A2A",
+"date": "2026-11-04"
+},
+{
+"key": "cognition2025",
+"year": 2025.45,
+"cat": "orch",
+"short": "Don't build multi-agents",
+"title": "Don't Build Multi-Agents",
+"who": "Yan (Cognition)",
+"note": "Argues that parallel subagents make conflicting decisions without shared context, and recommends single-threaded agents. The main practitioner counterpoint to agent teams.",
+"id": "url:266e61497808",
+"url": "https://cognition.com/blog/dont-build-multi-agents",
+"date": "2025-06-12"
+},
+{
+"key": "anthresearch2025",
+"year": 2025.45,
+"cat": "orch",
+"short": "Lead and subagents (research)",
+"title": "How we built our multi-agent research system",
+"who": "Anthropic",
+"note": "A lead agent spawns parallel subagents to search; the system beats a single agent on breadth-first research, at the cost of many more tokens.",
+"id": "url:37ed91c908e5",
+"url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+"date": "2025-06-13"
+},
+{
+"key": "sciscale2025",
+"year": 2025.94,
+"cat": "scale",
+"short": "Science of scaling agents",
+"title": "Towards a Science of Scaling Agent Systems",
+"who": "Kim et al. (Google Research, MIT)",
+"note": "A controlled comparison of single-agent and several multi-agent architectures across tasks: coordination helps on parallelisable tasks and hurts on sequential ones.",
+"id": "arxiv:2512.08296",
+"url": "https://arxiv.org/abs/2512.08296",
+"date": "2025-12-09"
+},
+{
+"key": "cursor2026",
+"year": 2026.04,
+"cat": "orch",
+"short": "Cursor planners and workers",
+"title": "Scaling long-running autonomous coding",
+"who": "Lin (Cursor)",
+"note": "Hundreds of coding agents, split into planners and workers, run for about a week on one codebase; the post reports what broke with flat coordination.",
+"id": "url:7136415dc18c",
+"url": "https://cursor.com/blog/scaling-agents",
+"date": "2026-01-14"
+},
+{
+"key": "ccompiler2026",
+"year": 2026.1,
+"cat": "orch",
+"short": "Parallel Claudes C compiler",
+"title": "Building a C compiler with a team of parallel Claudes",
+"who": "Anthropic",
+"note": "16 parallel agents over about two weeks write a roughly 100,000-line Rust C compiler, coordinating through git and tests rather than an orchestrator.",
+"id": "url:c62e49f23206",
+"url": "https://www.anthropic.com/engineering/building-c-compiler",
+"date": "2026-02-05"
+},
+{
+"key": "metr2026",
+"year": 2026.65,
+"cat": "risk",
+"short": "METR incident report",
+"title": "OpenAI Hugging Face incident investigation",
+"who": "METR",
+"note": "An independent investigation of a training run in which about 1,200 agents that should have been isolated coordinated through a shared message board. The best-audited case of unsanctioned agent coordination.",
+"id": "url:362ae46d9e3c",
+"url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation",
+"date": "2026-08-26"
+},
+{
+"key": "navier2026",
+"year": 2026.69,
+"cat": "scale",
+"short": "10,000-agent run",
+"title": "On the Navier-Stokes Millennium Prize Problem",
+"who": "OpenAI",
+"note": "OpenAI reports a run of about 10,000 agents behind a claimed result on the Navier-Stokes problem. The largest swarm claimed so far; the result and the role of the swarm remain disputed.",
+"id": "url:fbb79928f7d9",
+"url": "https://openai.com/index/navier-stokes-solution",
+"date": "2026-09-08"
+},
+{
+"key": "ord2026",
+"year": 2026.72,
+"cat": "scale",
+"short": "Swarm scaling (Ord)",
+"title": "Swarm Scaling",
+"who": "Ord",
+"note": "Fits how performance grows with the number of agents and argues that swarms mostly buy speed. Ord later removed the part based on OpenAI's Navier-Stokes chart.",
+"id": "url:7440ed6f73e0",
+"url": "https://www.tobyord.com/writing/swarm-scaling",
+"date": "2026-09-21"
+},
+{
+"key": "s3_2026",
+"year": 2026.85,
+"cat": "scale",
+"short": "s³ (trained swarms)",
+"title": "s³: Simple Scaling of Swarms via Cooperative Multi-agent RL",
+"who": "Jha et al.",
+"note": "Trains copies of one small model with a shared team reward to coordinate only by messages; trained at 4 agents and tested up to 16, it helps most where information is split across agents.",
+"id": "url:c9f1d5df2a85",
+"url": "https://scalingswarms.com",
+"date": "2026-11-06"
+},
+{
+"key": "mda2026",
+"year": 2026.79,
+"cat": "collab",
+"short": "Multi-developer agents",
+"title": "The Wealth of Agents: Scaling Agentic AI Across Developers",
+"who": "Hanjie, Jimenez, Wang, Narasimhan",
+"note": "Composes agents from many simulated specialist developers by routing subtasks; it beats single-developer systems on broad tasks but not on narrow ones or with generalist pools.",
+"id": "arxiv:2610.20518",
+"url": "https://arxiv.org/abs/2610.20518",
+"date": "2026-10-14"
+},
+{
+"key": "fable2026",
+"year": 2026.86,
+"cat": "scale",
+"short": "1,000-agent Lean proof",
+"title": "Safely scaling multi-agent teams with Fable 5.2",
+"who": "Zhang, Peng, Najt, Scholl, Martin",
+"note": "A lead and 999 helpers, coordinating only through git and a shared database, formalise Fermat's Last Theorem in Lean in 28.7 hours, starting from given milestones and lemmas.",
+"id": "url:62afb1e0ab94",
+"url": "https://claude.dev/blog/safely-scaling-multi-agent-teams-with-fable-5-2",
+"date": "2026-11-09"
+}
+],
+"edges": [
+[
+"amdahl1967",
+"brooks1975"
+],
+[
+"amdahl1967",
+"gustafson1988"
+],
+[
+"cnp1980",
+"kqml1994"
+],
+[
+"boids1987",
+"pso1995"
+],
+[
+"boids1987",
+"antsystem1996"
+],
+[
+"condorcet1785",
+"surowiecki2004"
+],
+[
+"surowiecki2004",
+"woolley2010"
+],
+[
+"surowiecki2004",
+"lorenz2011"
+],
+[
+"markov1994",
+"foerster2016"
+],
+[
+"markov1994",
+"maddpg2017"
+],
+[
+"maddpg2017",
+"qmix2018"
+],
+[
+"maddpg2017",
+"hideseek2019"
+],
+[
+"markov1994",
+"alphastar2019"
+],
+[
+"som1986",
+"camel2023"
+],
+[
+"outofone2022",
+"genagents2023"
+],
+[
+"som1986",
+"debate2023"
+],
+[
+"condorcet1785",
+"debate2023"
+],
+[
+"debate2023",
+"mad2023"
+],
+[
+"camel2023",
+"chatdev2023"
+],
+[
+"camel2023",
+"metagpt2023"
+],
+[
+"camel2023",
+"autogen2023"
+],
+[
+"camel2023",
+"agentverse2023"
+],
+[
+"debate2023",
+"moreagents2024"
+],
+[
+"condorcet1785",
+"moreagents2024"
+],
+[
+"moreagents2024",
+"llmcalls2024"
+],
+[
+"chatdev2023",
+"macnet2024"
+],
+[
+"debate2023",
+"moa2024"
+],
+[
+"collusion2024",
+"promptinfection2024"
+],
+[
+"autogen2023",
+"magentic2024"
+],
+[
+"kqml1994",
+"mcp2024"
+],
+[
+"collusion2024",
+"marisks2025"
+],
+[
+"genagents2023",
+"agentsociety2025"
+],
+[
+"debate2023",
+"stopmad2025"
+],
+[
+"chatdev2023",
+"mast2025"
+],
+[
+"metagpt2023",
+"mast2025"
+],
+[
+"mcp2024",
+"a2a2025"
+],
+[
+"magentic2024",
+"cognition2025"
+],
+[
+"magentic2024",
+"anthresearch2025"
+],
+[
+"moreagents2024",
+"sciscale2025"
+],
+[
+"mast2025",
+"sciscale2025"
+],
+[
+"anthresearch2025",
+"cursor2026"
+],
+[
+"cursor2026",
+"ccompiler2026"
+],
+[
+"hearsay1980",
+"ccompiler2026"
+],
+[
+"marisks2025",
+"metr2026"
+],
+[
+"macnet2024",
+"navier2026"
+],
+[
+"moreagents2024",
+"ord2026"
+],
+[
+"amdahl1967",
+"ord2026"
+],
+[
+"qmix2018",
+"s3_2026"
+],
+[
+"moreagents2024",
+"s3_2026"
+],
+[
+"moa2024",
+"mda2026"
+],
+[
+"ccompiler2026",
+"fable2026"
+],
+[
+"hearsay1980",
+"fable2026"
+]
+]
+}

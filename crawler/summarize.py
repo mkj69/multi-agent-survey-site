@@ -37,7 +37,13 @@ def contexts():
                 f = os.path.join(SURVEY, sub, r["key"][3:] + ".md")
                 if os.path.exists(f):
                     raw = open(f, errors="replace").read()
-                    raw = re.sub(r"^(#|- \*\*|> ).*$", "", raw, flags=re.M) if sub == "digests" else re.sub(r"^- \*\*.*$", "", raw, flags=re.M)
+                    if sub == "digests":
+                        # Only the section that describes the work itself, not our assessment of it.
+                        m = re.search(r"## 主要内容(.*?)(?:\n## |\Z)", raw, re.S)
+                        raw = m.group(1) if m else ""
+                    else:
+                        # The English source sentences of an openly licensed translation.
+                        raw = " ".join(l[2:] for l in raw.splitlines() if l.startswith("> "))
                     text = (text + " " + re.sub(r"\s+", " ", raw)).strip()[:1500]
                     break
         if text and len(text) > len(ctx.get(iid, "")):

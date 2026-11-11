@@ -65,7 +65,7 @@ def main():
     # Hosts: posts that others quote, plus the main non-post works (papers, blogs, code) on these topics.
     hosts = {h: items[h]["t"] for h in quoted}
     for iid, it in items.items():
-        if it["y"] in ("blog", "code", "paper") and (it.get("s") or it.get("cl")) and it["d"] >= "2026-03":
+        if it["y"] in ("blog", "code", "paper") and (it.get("s") or it.get("cl") or it.get("sv")) and it["d"] >= "2025-06":
             hosts[iid] = it["t"]
     host_list = "\n".join(json.dumps(dict(id=k, title=v[:120]), ensure_ascii=False) for k, v in hosts.items())
     batch = []
@@ -77,22 +77,30 @@ def main():
             b["quotes"] = f"x:{q}"
         batch.append(b)
     out = dict(old)
-    for k in range(0, len(batch), 25):
-        chunk = batch[k:k + 25]
+
+    def job(chunk):
         with tempfile.TemporaryDirectory() as td:
             o = os.path.join(td, "o.txt")
             subprocess.run([CODEX, "exec", "--sandbox", "read-only", "--skip-git-repo-check", "-c", 'model_reasoning_effort="medium"', "--cd", td, "-o", o, "-"],
                            input=PROMPT % host_list + "\n".join(json.dumps(c, ensure_ascii=False) for c in chunk), capture_output=True, text=True, timeout=1500)
             res = open(o).read() if os.path.exists(o) else ""
+        got = {}
         for line in res.splitlines():
             line = line.strip()
             if line.startswith("{"):
                 try:
                     j = json.loads(line)
-                    out[j["id"]] = dict(host=j.get("host"), depth=j.get("depth", "reaction"))
+                    got[j["id"]] = dict(host=j.get("host"), depth=j.get("depth", "reaction"))
                 except Exception:
                     pass
-        print("batch", k // 25 + 1, "done", len(out), flush=True)
+        return got
+
+    import concurrent.futures as cf
+    chunks = [batch[k:k + 25] for k in range(0, len(batch), 25)]
+    with cf.ThreadPoolExecutor(12) as ex:
+        for n, got in enumerate(ex.map(job, chunks), 1):
+            out.update(got)
+            print("batch", n, "/", len(chunks), "done", len(out), flush=True)
     for iid, (text, q) in posts.items():
         r = out.setdefault(iid, dict(host=None, depth="reaction"))
         if q and f"x:{q}" in items:
