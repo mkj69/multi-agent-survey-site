@@ -6,8 +6,7 @@ emergent behaviour, multi-agent risks, protocols and frameworks, and the classic
 (voting theory, parallel computing, multi-agent systems, MARL, swarm intelligence). Each item has a
 one-sentence summary, and a timeline map shows the classic works and what each built on.
 
-**Site:** https://mkj69.github.io/multi-agent-survey-site/ · **Map:** https://mkj69.github.io/multi-agent-survey-site/map.html ·
-**Survey report (Chinese):** https://mkj69.github.io/swarm-survey-site/report.html
+**Site:** https://mkj69.github.io/multi-agent-survey-site/ · **Map:** https://mkj69.github.io/multi-agent-survey-site/map.html
 
 The repository stores links and metadata only (`data/items.json`). The site shows each work from
 its original source: the PDF for papers, the post for X, the page for blogs, and the README for
