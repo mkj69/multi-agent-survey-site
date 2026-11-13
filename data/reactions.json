@@ -2306,5 +2306,373 @@
 "x:2119233839851885046": {
 "host": null,
 "depth": "reaction"
+},
+"x:2121032269788004690": {
+"host": "arxiv:2608.30661",
+"depth": "analysis"
+},
+"x:2120927246307532842": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120974977251832231": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120895681967575135": {
+"host": "x:2118743696246194621",
+"depth": "reaction"
+},
+"x:2120936638901858728": {
+"host": "x:2120927246307532842",
+"depth": "reaction"
+},
+"x:2120736035122684269": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120839808264110586": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120956941442932774": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120811356681130194": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120926560773705788": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120809782403871154": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120986882301473041": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120819670269714738": {
+"host": "gh:anthropics/claude-code",
+"depth": "analysis"
+},
+"x:2121006433194090577": {
+"host": "x:2120927246307532842",
+"depth": "analysis"
+},
+"x:2120961808806637950": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120845301431091674": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2120895262361084216": {
+"host": "x:2120132485186986305",
+"depth": "analysis"
+},
+"x:2120873049432162483": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2120929864739922241": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120624075223744609": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120404894331150514": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120554612059230468": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120608072876060886": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120660227393716359": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120354482316091897": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120605902395052263": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120514668234211626": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120611919832735898": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120585067764519187": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120347307988381787": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120545943393358308": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120584121517035806": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120309995753361484": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120440737703825767": {
+"host": "x:2119867114450268322",
+"depth": "analysis"
+},
+"x:2120360699016942043": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120585343871471887": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120327613264605464": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120504313537589359": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120543817409368390": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120325826617233907": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120554926950825995": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120636264030646397": {
+"host": "url:62afb1e0ab94",
+"depth": "reaction"
+},
+"x:2120528265202815060": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120539649357853033": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119946375131525478": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119977786949378283": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120251163278999801": {
+"host": "arxiv:2610.22319",
+"depth": "analysis"
+},
+"x:2120162063905681632": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120207360983798198": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120172827248599363": {
+"host": "x:2120162063905681632",
+"depth": "reaction"
+},
+"x:2120209797639524587": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120198296392364047": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120245800924262816": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120152882380959814": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119956667064619498": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120261555619041569": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120035325607399692": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119943123250078141": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120198947444592908": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120210355615842428": {
+"host": "x:2119867114450268322",
+"depth": "analysis"
+},
+"x:2120198106826334387": {
+"host": "x:2120162063905681632",
+"depth": "reaction"
+},
+"x:2120156155607437460": {
+"host": "url:37ed91c908e5",
+"depth": "reaction"
+},
+"x:2120167449500758368": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120265927476560382": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120283023702671558": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2120057802555060295": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2120132485186986305": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120008033384165455": {
+"host": "x:2119867114450268322",
+"depth": "analysis"
+},
+"x:2119892392937759097": {
+"host": "x:2119792446242718170",
+"depth": "reaction"
+},
+"x:2119727256860025309": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119874108460503460": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2119582331434316118": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119888794065174734": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119890480494207178": {
+"host": "x:2119867114450268322",
+"depth": "analysis"
+},
+"x:2119890648731922915": {
+"host": "x:2119867114450268322",
+"depth": "analysis"
+},
+"x:2119875041475379681": {
+"host": "url:62afb1e0ab94",
+"depth": "analysis"
+},
+"x:2119875053198385371": {
+"host": "url:62afb1e0ab94",
+"depth": "analysis"
+},
+"x:2119875055018713529": {
+"host": "url:62afb1e0ab94",
+"depth": "reaction"
+},
+"x:2119893458114445587": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119782487786406264": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119893265956626600": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119875044730196230": {
+"host": "url:62afb1e0ab94",
+"depth": "analysis"
+},
+"x:2119875046147805388": {
+"host": "url:62afb1e0ab94",
+"depth": "analysis"
+},
+"x:2119885614640505198": {
+"host": "x:2119867114450268322",
+"depth": "reaction"
+},
+"x:2119386429164028251": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119348075772707045": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119515554553663833": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119332146485891501": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119389910381535437": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119466917639426290": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119467897697230971": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119069177042411980": {
+"host": null,
+"depth": "analysis"
 }
 }
