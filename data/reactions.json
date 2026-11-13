@@ -464,7 +464,7 @@
 "depth": "analysis"
 },
 "x:2109385496237678844": {
-"host": "arxiv:2610.12176",
+"host": "x:2109385006603006435",
 "depth": "analysis"
 },
 "x:2109255386515517645": {
@@ -516,7 +516,7 @@
 "depth": "reaction"
 },
 "x:2108050195607069018": {
-"host": "arxiv:2606.10662",
+"host": "x:2107999019066929204",
 "depth": "analysis"
 },
 "x:2107999019066929204": {
@@ -2100,6 +2100,210 @@
 "depth": "analysis"
 },
 "x:1959654669883736192": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120951880113127648": {
+"host": null,
+"depth": "reaction"
+},
+"x:2121002976915673181": {
+"host": "gh:kyegomez/swarms",
+"depth": "analysis"
+},
+"x:2120917605238374609": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2120843801551900838": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2120791959962886321": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120701363109708126": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120696330032996449": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120821111663591588": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120706409432310117": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120992028125208666": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120951095065518129": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120692716174729593": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120969731339608130": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120626257306296465": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120552633048142017": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120519414500016365": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2120504314578059459": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120385739342897469": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120601423696007214": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120605847633990021": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120006915933802526": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120167736068157951": {
+"host": "url:762ce7d0dfc6",
+"depth": "reaction"
+},
+"x:2120260358036213834": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120198811297694192": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120186189147734376": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119949991821316096": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119960730518884627": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2120156232224821404": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120209233019019723": {
+"host": null,
+"depth": "analysis"
+},
+"x:2120209881802350964": {
+"host": null,
+"depth": "reaction"
+},
+"x:2120196009762734578": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2120189951295803536": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119903588155830773": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119875977853424070": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119733451024932897": {
+"host": "arxiv:2611.08483",
+"depth": "reaction"
+},
+"x:2119620432240464096": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119873578690556391": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119907209157193933": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119872666752700835": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119592025440092192": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119889455104577621": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119889470246080735": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119889461651849503": {
+"host": "url:796a7f7ee338",
+"depth": "analysis"
+},
+"x:2119903225079857427": {
+"host": "url:796a7f7ee338",
+"depth": "reaction"
+},
+"x:2119333030762590557": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119333933166821645": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119449162076848606": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119557516426158169": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119335455271321910": {
+"host": null,
+"depth": "analysis"
+},
+"x:2119335504386638054": {
+"host": null,
+"depth": "reaction"
+},
+"x:2119233839851885046": {
 "host": null,
 "depth": "reaction"
 }

@@ -27,13 +27,27 @@ def get(url):
     return {}
 
 
+def tracked():
+    """The base list plus every account that already has a post in the collection."""
+    hs = list(ACCOUNTS)
+    p = os.path.join(os.path.dirname(HERE), "data", "items.json")
+    if os.path.exists(p):
+        for it in json.load(open(p))["items"]:
+            m = re.match(r"https://x\.com/([^/]+)/status/", it["u"]) if it["y"] == "post" else None
+            if m and m.group(1).lower() not in {h.lower() for h in hs}:
+                hs.append(m.group(1))
+    return hs
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--since", required=True)
     ap.add_argument("--out", default=os.path.join(HERE, "work", "x_candidates.jsonl"))
     a = ap.parse_args()
     out = {}
-    for h in ACCOUNTS:
+    hs = tracked()
+    print("accounts", len(hs), flush=True)
+    for h in hs:
         cursor = None
         for page in range(4):
             d = get(f"https://api.fxtwitter.com/2/profile/{h}/statuses" + (f"?cursor={cursor}" if cursor else ""))
